@@ -1,0 +1,30 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Fetch Schema",
+    "properties": {
+        "country": {
+            "type": "string",
+            "title": "article country - for 'headlines' endpoint",
+            "default": "en",
+            "pattern": "^[a-zA-Z0-9]+$"
+        },
+        "language": {
+            "type": "string",
+            "title": "article language",
+            "default": "en",
+            "pattern": "^[a-zA-Z0-9]+$"
+        },
+        "q": {
+            "type": "string",
+            "title": "search query",
+            "default": "gb",
+            "pattern": "^[a-zA-Z0-9]+$"
+        },
+        "pageSize": {
+            "type": "integer",
+            "default": 100
+        }
+    }
+}
