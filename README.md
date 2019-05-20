@@ -39,5 +39,3 @@ In `news-service` backend:
 - `test-data.js` is meant for mocking the API for testing, but we didn't have time for that yet
 
 Both apps  have [Jest](https://jestjs.io/) set up for testing in `/tests`, and use ESLint & Prettier for code formatting. The front-end app has Cypress set up for E2E, but no E2E test has been written yet
-
-'
