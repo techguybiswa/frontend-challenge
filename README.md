@@ -29,7 +29,7 @@ You can use [Homebrew] to get [nvm](https://github.com/nvm-sh/nvm) to manage you
 
 ###  Main App Files
 
-In `news-app` front-end: `App.vue` renders different views (in `src/views`) through the router, and pulls in data from the backend endpoint to load each into its own article componenet (`src/components/Article.vue`).
+In `news-app` front-end: `App.vue` renders different views (in `src/views`) through the router, and pulls in data from the backend endpoint to load each into its own article componenet (`src/components/Article.vue`). The main view is `src/views/Home.vue`
 Wanted to add articles to the store, or filtering options, but didn't have the time
 
 In `news-service` backend: 
