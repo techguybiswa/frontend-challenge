@@ -47,7 +47,7 @@ export default {
     loadFilter: debounce(function loadFilter(input) {
       if (input) {
         this.contentType = `search results for: ${input}`
-        this.loadArticles('search', JSON.stringify({ q: encodeURI(input) }))
+        this.loadArticles('search', JSON.stringify({ q: input }))
       } else {
         this.contentType = 'top UK headlines'
         this.loadArticles('headlines', JSON.stringify({ country: 'gb' }))
