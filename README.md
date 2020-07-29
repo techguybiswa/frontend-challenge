@@ -10,7 +10,7 @@ The front-end pings the endpoint, loads the data accordingly and renders it for 
 
 For the database evaluation task, there are 3 questions are in the included [DB-Task.md](DB-Task.md) file, and they are centred on an event registration system.
 
-##  The 3 sections: Code, Analytics & Database Evaluation
+##  What is the Challenge?
 
 Please fork the repository to begin the task. The [guidelines](#what-we-are-looking-for) are at the bottom of this page 😊
 
