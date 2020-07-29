@@ -1,18 +1,18 @@
-# News Reader Front-End Exercise
+# Product Engineer Front-End Challenge
 
-We have a basic pair of applications that serve up a front-end, written in [Vue.js](https://vuejs.org/), and a backend written in Node.js using the [Serverless Framework](https://serverless.com/). 
+This challenge includes coding, an analytics design question, and a database evaluation task.
 
-It allows a reader to see the latest UK news and search for articles by keywords.
+We have a basic News Reader: A pair of applications that serve up a front-end, written in [Vue.js](https://vuejs.org/), and a backend written in Node.js using the [Serverless Framework](https://serverless.com/). They allow a reader to see the latest UK news and search for articles by keywords.
 
 The main backend endpoint is the `/articles` endpoint, which can return the [top headlines](https://newsapi.org/docs/endpoints/top-headlines) or results based on a query of ["everything"](https://newsapi.org/docs/endpoints/everything). It is a POST request that takes the type (`headlines` or `search`), along with the query body (uses `country` for headlines, and `q` for the search).
 
 The front-end pings the endpoint, loads the data accordingly and renders it for the reader on the homepage.
 
-##  The Task
+##  The 3 sections: Code, Analytics & Database Evaluation
 
 Please fork the repository to begin the task. The [guidelines](#what-we-are-looking-for) are at the bottom of this page 😊
 
-First, after you have gotten familiar with the app, [technical details of the files are below](#main-app-files), we would like for you to:
+First, the code: After you have gotten familiar with the app, [technical details of the files are below](#main-app-files), we would like for you to:
 1. improve the functionality & design of the Article component (`src/components/Article.vue`) so that it is more intuitive to a reader
 2. add a section to the homepage which allows the user to filter the results according to **ONE** type of data (topic, source, date, or ??) that a reader might want to filter news by
 3. implement web accessibility on components and make it SEO friendly
@@ -21,7 +21,7 @@ First, after you have gotten familiar with the app, [technical details of the fi
    
 **If you prefer, you are welcome to use your own/preferred front-end framework (e.g. React)**, to ping our included backend service. You are also welcome to **make any changes to the codebase that you would like to, as long as it is still functional.** Please remember that this is meant to take up to **3 hours in total**, and is merely an exercise, so we are not expecting the entire moon, just holistic improvements! 😬 😅
 
-Then, write a markdown file describing what **types of user behaviour** you would like to capture on this page for an analytical framework (e.g. [Heap](https://docs.heap.io/docs), [Amplitude](https://developers.amplitude.com/docs) or [Mixpanel](https://developer.mixpanel.com/docs)), and **why**.
+Then, analytics design: create a markdown file describing what **types of user behaviour** you would like to capture on this page for an analytical framework (e.g. [Heap](https://docs.heap.io/docs), [Amplitude](https://developers.amplitude.com/docs) or [Mixpanel](https://developer.mixpanel.com/docs)), and **why**.
 
 Finally, write include your answers to the **[Database Evaluation Task](DB-Task.md)** in your README.
 
