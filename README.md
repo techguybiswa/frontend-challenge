@@ -68,7 +68,7 @@ In `news-service` backend:
 - `newsapi.js` contains "business" / user-focused logic 
 - `test-data.js` is an optional local set for mocking the API & testing
 
-Both apps have [Jest](https://jestjs.io/) set up for testing in `/tests`, and use ESLint & Prettier for code formatting. The front-end app has Cypress set up for E2E, but no E2E tests have been written.
+Both apps have [Jest](https://jestjs.io/) set up for testing in `/tests`, and use ESLint & Prettier for code formatting. The front-end app has [Cypress](https://www.cypress.io/) set up for E2E, but no E2E tests have been written, so **you are allowed to use whatever testing framework you would like**.
 
 ### What we are looking for
 
