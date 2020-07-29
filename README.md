@@ -12,7 +12,7 @@ For the database evaluation task, there are 3 questions are in the included [DB-
 
 ##  What is the Challenge?
 
-Please fork the repository to begin the task. The [guidelines](#what-we-are-looking-for) are at the bottom of this page 😊
+Please fork the repository to begin the task. [Submission guidelines](#what-we-are-looking-for) are at the bottom of this page 😊
 
 First, the code: After you have gotten familiar with the app, [technical details of the files are below](#main-app-files), we would like for you to:
 1. improve the functionality & design of the Article component (`src/components/Article.vue`) so that it is more intuitive to a reader
@@ -25,7 +25,7 @@ First, the code: After you have gotten familiar with the app, [technical details
 
 Then, analytics design: create a markdown file describing what **types of user behaviour** you would like to capture on this page for an analytical framework (e.g. [Heap](https://docs.heap.io/docs), [Amplitude](https://developers.amplitude.com/docs) or [Mixpanel](https://developer.mixpanel.com/docs)), and **why**.
 
-Finally, write include your answers to the **[Database Evaluation Task](DB-Task.md)** in your README.
+Finally, write include your answers to the **[Database Evaluation Task](DB-Task.md)** in your markdown file.
 
 ## Quickstart dev
 
