@@ -8,6 +8,8 @@ For the coding & analytics design question, we have a basic News Reader: A pair 
 
 For the database evaluation task, there are 3 questions are in the included [DB-Task.md](DB-Task.md) file, and they are centred on an event registration system.
 
+**Please email us the link to your repository when it's ready to review, at least 48h before your interview. Thank you, and good luck! 🎉**
+
 ##  What is the Challenge?
 
 Please fork the repository to begin the task. [Submission guidelines](#what-we-are-looking-for) are at the bottom of this page 😊
