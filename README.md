@@ -12,7 +12,7 @@ For the database evaluation task, there are 3 questions are in the included [DB-
 
 Please fork the repository to begin the task. [Submission guidelines](#what-we-are-looking-for) are at the bottom of this page 😊
 
-First, the code: After you have gotten familiar with the app, [technical details of the files are below](#main-app-functionality--file-structure), we would like for you to:
+First, the code: After you have gotten familiar with the app, [technical details of the app are below](#main-app-functionality--file-structure), we would like for you to:
 1. add a section to the homepage which allows the user to filter the results according to **ONE** category that a reader might want to filter news by (topic, source, date, or ??) 
 2. add at least 1 or 2 tests to the front-end web app
 3. implement web accessibility on components and make the website SEO friendly
