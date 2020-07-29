@@ -12,10 +12,6 @@ The front-end pings the endpoint, loads the data accordingly and renders it for 
 
 Please fork the repository to begin the task 😊
 
-Once you are able to run the app following the steps [below](#quickstart-dev), it'll render the view on `http://localhost:8080/` like this: ![news-app](news-app.png)
-Your backend service will be running on `http://localhost:3000/` should look like this:
-![news-service](news-service.png)
-
 First, after you have gotten familiar with the app, [technical details of the files are below](#main-app-files), we would like for you to:
 1. improve the functionality & design of the Article component (`src/components/Article.vue`) so that it is more intuitive to a reader
 2. add a section to the homepage which allows the user to filter the results according to a topic, source, date, or other type of data that a reader might want to filter news by
@@ -53,6 +49,10 @@ For other OSes, the installation tools are in the links for `nvm` and `yarn` abo
         ```
    3. `yarn install`
    4. Run `yarn serve`
+
+Once you are able to run the app following the steps [above](#quickstart-dev), it'll render the view on `http://localhost:8080/` like this: ![news-app](news-app.png)
+Your backend service will be running on `http://localhost:3000/` should look like this:
+![news-service](news-service.png)
 
 ###  Main App Files
 
