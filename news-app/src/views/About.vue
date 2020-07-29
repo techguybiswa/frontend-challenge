@@ -3,7 +3,12 @@
     <v-layout wrap>
       <div class="about">
         <h1>About this app</h1>
-        <v-btn flat src="https://github.com/parisandmilo/news-api" target="_blank">Repo</v-btn>
+        <v-btn
+          flat
+          src="https://github.com/parisandmilo/news-api"
+          target="_blank"
+          >Repo</v-btn
+        >
       </div>
     </v-layout>
   </v-container>

@@ -1,7 +1,9 @@
 <template>
   <v-container grid-list-md fluid>
     <v-layout wrap>
-      <div id="homeTitle" class="display-1">Showing you the {{ contentType }}</div>
+      <div id="homeTitle" class="display-1">
+        Showing you the {{ contentType }}
+      </div>
       <v-flex md12>
         <v-text-field
           flat
@@ -14,8 +16,14 @@
           @input="loadFilter"
         ></v-text-field>
       </v-flex>
-      <v-flex xs12 sm12 md12 v-for="article in articles" :key="article.publishedAt">
-        <Article :article="article"/>
+      <v-flex
+        xs12
+        sm12
+        md12
+        v-for="article in articles"
+        :key="article.publishedAt"
+      >
+        <Article :article="article" />
       </v-flex>
     </v-layout>
   </v-container>
@@ -27,7 +35,7 @@ import axios from 'axios'
 import Article from '../components/Article'
 
 const stage = process.env.NODE_ENV
-axios.defaults.baseURL = process.env[`VUE_APP_SERVICE_URL_${stage}`]
+axios.defaults.baseURL = `${process.env.VUE_APP_SERVICE_URL}${stage}`
 axios.defaults.withCredentials = true
 axios.defaults.headers.common['Content-Type'] = 'application/json'
 
@@ -41,6 +49,7 @@ export default {
     contentType: 'top UK headlines'
   }),
   created() {
+    console.log(process.env[`VUE_APP_SERVICE_URL_${stage}`])
     this.loadArticles('headlines', JSON.stringify({ country: 'gb' }))
   },
   methods: {

@@ -11,9 +11,11 @@
           <div>
             <h3 class="headline mb-0">{{ article.name }}</h3>
             <div>
-              <span
-                class="grey--text"
-              >{{ article.source.name }} | {{ article.author || 'author not listed' }} | {{ new Date(article.publishedAt).toDateString() }}</span>
+              <span class="grey--text"
+                >{{ article.source.name }} |
+                {{ article.author || 'author not listed' }} |
+                {{ new Date(article.publishedAt).toDateString() }}</span
+              >
             </div>
             <div>{{ article.description }}</div>
           </div>
