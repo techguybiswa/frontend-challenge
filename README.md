@@ -5,9 +5,10 @@ This application serves up a front-end, written in [Vue.js](https://vuejs.org/),
 ##  Quickstart dev
 
 Use the latest Node version as it's recommended.
-You can use [Homebrew] to get [nvm](https://github.com/nvm-sh/nvm) to manage your version, then:
+On Mac, you can use [Homebrew] to get [nvm](https://github.com/nvm-sh/nvm) to manage your version & [`yarn`](https://classic.yarnpkg.com/en/docs/install/#mac-stable) for packages, then:
 - `nvm install node`
 - `nvm use node`
+For other OSes, the installation tools are in the links for `nvm` and `yarn` above
 
 1. To run the backend service - written using the Serverless framework:
    1. If you haven't installed the serverless CLI tool, do so by using a package manager, like this: `npm install serverless -g`
