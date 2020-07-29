@@ -14,7 +14,7 @@ Please fork the repository to begin the task. The [guidelines](#what-we-are-look
 
 First, after you have gotten familiar with the app, [technical details of the files are below](#main-app-files), we would like for you to:
 1. improve the functionality & design of the Article component (`src/components/Article.vue`) so that it is more intuitive to a reader
-2. add a section to the homepage which allows the user to filter the results according to a topic, source, date, or other type of data that a reader might want to filter news by
+2. add a section to the homepage which allows the user to filter the results according to **ONE** type of data (topic, source, date, or ??) that a reader might want to filter news by
 3. implement web accessibility on components and make it SEO friendly
 4. add at least 1 or 2 tests to the front-end web app
 5. (optional) improve the overall design of the homepage
