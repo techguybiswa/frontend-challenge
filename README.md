@@ -12,19 +12,20 @@ For the database evaluation task, there are 3 questions are in the included [DB-
 
 Please fork the repository to begin the task. [Submission guidelines](#what-we-are-looking-for) are at the bottom of this page 😊
 
-First, the code: After you have gotten familiar with the app, [technical details of the app are below](#main-app-functionality--file-structure), we would like for you to:
-1. add a section to the homepage which allows the user to filter the results according to **ONE** category that a reader might want to filter news by (topic, source, date, or ??) 
+1] First, the code: After you have gotten familiar with the app, [technical details of the app are below](#main-app-functionality--file-structure), we would like for you to:
+1. add a section to the homepage which allows the user to filter the results according to **ONE** category that a reader might want to filter news by (e.g. topic, source, date, or ??) 
 2. add at least 1 or 2 tests to the front-end web app
 3. implement web accessibility on components
-4. *(optional)* improve the functionality & design of the Article component (`src/components/Article.vue`) so that it is more intuitive to a reader
-5. *(optional)* improve the overall design of the homepage
-6. *(optional)* make the website SEO friendly
+4. *(optional tasks)* If you find that you have time and would like to make the front-end app even nicer, you could tackle one of the following tasks:
+   - improve the functionality & design of the Article component (`src/components/Article.vue`) so that it is more intuitive to a reader
+   - improve the overall design of the homepage
+   - make the website SEO friendly
    
 **If you prefer, you are welcome to use your own/preferred front-end framework (e.g. React)**, to ping our included backend service. You are also welcome to **make any changes to the codebase that you would like to, as long as it is still functional.** Please remember that this is meant to take up to **3 hours in total**, and is merely an exercise, so we are not expecting the entire moon, just holistic improvements! 😬 😅
 
-Then, analytics design: create a markdown file describing what **types of user behaviour** you would like to capture on this page for an analytical framework (e.g. [Heap](https://docs.heap.io/docs), [Amplitude](https://developers.amplitude.com/docs) or [Mixpanel](https://developer.mixpanel.com/docs)), and **why**.
+2] Then, analytics design: create a markdown file describing what **types of user behaviour** you would like to capture on this page for an analytical framework (e.g. [Heap](https://docs.heap.io/docs), [Amplitude](https://developers.amplitude.com/docs) or [Mixpanel](https://developer.mixpanel.com/docs)), and **why**.
 
-Finally, write include your answers to the **[Database Evaluation Task](DB-Task.md)** in your markdown file.
+3] Finally, write include your answers to the **[Database Evaluation Task](DB-Task.md)** in your markdown file.
 
 ## Quickstart dev
 
