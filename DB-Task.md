@@ -2,7 +2,7 @@
 
 Let's design an event registration system! 
 
-This database can be SQL or NoSQL -based, and we are looking for clarity in communication, ability to turn abstract concepts into practical steps, and systematic thinking.
+This database is not bound to any particular technology (e.g. SQL or NoSQL), and we are looking for clarity in communication, ability to turn abstract concepts into practical steps, and systematic thinking.
 
 ## Here are the requirements
 - Required fields for each event are: **event title, event date, event location** and **registration cost**. 

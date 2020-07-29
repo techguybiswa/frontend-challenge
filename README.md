@@ -1,6 +1,6 @@
 # Product Engineer Front-End Challenge
 
-This challenge includes coding, an analytics design question, and a database evaluation task.
+This challenge includes coding, an analytics design question, and a database evaluation task. Whilst we are looking for a front-end focused developer, as a small team we are realistically sharing the load on all applications. So the final task is meant to assess how you think about data-intensive systems - it does not use any specific database technology.
 
 We have a basic News Reader: A pair of applications that serve up a front-end, written in [Vue.js](https://vuejs.org/), and a backend written in Node.js using the [Serverless Framework](https://serverless.com/). They allow a reader to see the latest UK news and search for articles by keywords.
 
