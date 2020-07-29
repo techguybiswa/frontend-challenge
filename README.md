@@ -10,7 +10,7 @@ The front-end pings the endpoint, loads the data accordingly and renders it for 
 
 ##  The Task
 
-Please fork the repository to begin the task 😊
+Please fork the repository to begin the task. The [guidelines](#what-we-are-looking-for) are at the bottom of this page 😊
 
 First, after you have gotten familiar with the app, [technical details of the files are below](#main-app-files), we would like for you to:
 1. improve the functionality & design of the Article component (`src/components/Article.vue`) so that it is more intuitive to a reader
