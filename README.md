@@ -1,12 +1,10 @@
 # Product Engineer Front-End Challenge
 
-This challenge includes coding, an analytics design question, and a database evaluation task. Whilst we are looking for a front-end focused developer, as a small team we are realistically sharing the load on all applications. So the final task is meant to assess how you think about data-intensive systems - it does not use any specific database technology.
+This challenge includes coding, an analytics design question, and a database evaluation task.
+
+Whilst we are looking for a front-end focused developer, as a small team we are realistically sharing the load on all applications. So the final task is meant to assess how you think about data-intensive systems - it does not use any specific database technology.
 
 For the coding & analytics design question, we have a basic News Reader: A pair of applications that serve up a front-end, written in [Vue.js](https://vuejs.org/), and a backend written in Node.js using the [Serverless Framework](https://serverless.com/). They allow a reader to see the latest UK news and search for articles by keywords.
-
-The main backend endpoint is the `/articles` endpoint, which can return the [top headlines](https://newsapi.org/docs/endpoints/top-headlines) or results based on a query of ["everything"](https://newsapi.org/docs/endpoints/everything). It is a POST request that takes the type (`headlines` or `search`), along with the query body (uses `country` for headlines, and `q` for the search).
-
-The front-end pings the endpoint, loads the data accordingly and renders it for the reader on the homepage.
 
 For the database evaluation task, there are 3 questions are in the included [DB-Task.md](DB-Task.md) file, and they are centred on an event registration system.
 
@@ -14,11 +12,11 @@ For the database evaluation task, there are 3 questions are in the included [DB-
 
 Please fork the repository to begin the task. [Submission guidelines](#what-we-are-looking-for) are at the bottom of this page 😊
 
-First, the code: After you have gotten familiar with the app, [technical details of the files are below](#main-app-files), we would like for you to:
-1. improve the functionality & design of the Article component (`src/components/Article.vue`) so that it is more intuitive to a reader
-2. add a section to the homepage which allows the user to filter the results according to **ONE** type of data (topic, source, date, or ??) that a reader might want to filter news by
-3. implement web accessibility on components and make it SEO friendly
-4. add at least 1 or 2 tests to the front-end web app
+First, the code: After you have gotten familiar with the app, [technical details of the files are below](#main-app-functionality--file-structure), we would like for you to:
+1. add a section to the homepage which allows the user to filter the results according to **ONE** category that a reader might want to filter news by (topic, source, date, or ??) 
+2. add at least 1 or 2 tests to the front-end web app
+3. implement web accessibility on components and make the website SEO friendly
+4. (optional) improve the functionality & design of the Article component (`src/components/Article.vue`) so that it is more intuitive to a reader
 5. (optional) improve the overall design of the homepage
    
 **If you prefer, you are welcome to use your own/preferred front-end framework (e.g. React)**, to ping our included backend service. You are also welcome to **make any changes to the codebase that you would like to, as long as it is still functional.** Please remember that this is meant to take up to **3 hours in total**, and is merely an exercise, so we are not expecting the entire moon, just holistic improvements! 😬 😅
@@ -56,9 +54,13 @@ Once you are able to run the app following the steps [above](#quickstart-dev), i
 Your backend service will be running on `http://localhost:3000/` should look like this:
 ![news-service](news-service.png)
 
-###  Main App Files
+###  Main App Functionality & File Structure
 
 The key dependencies used are the [`news-api` module](https://www.npmjs.com/package/newsapi) which allows us to fetch news from [NewsAPI.org](https://newsapi.org/) on our backend, [`axios`](https://www.npmjs.com/package/axios) & [Vuetify](https://vuetifyjs.com/en/) on front-end for fetching data and components respectively.
+
+The main backend endpoint is the `/articles` endpoint, which can return the [top headlines](https://newsapi.org/docs/endpoints/top-headlines) or results based on a query of ["everything"](https://newsapi.org/docs/endpoints/everything). It is a POST request that takes the type (`headlines` or `search`), along with the query body (uses `country` for headlines, and `q` for the search).
+
+The front-end pings the endpoint, loads the data accordingly and renders it for the reader on the homepage.
 
 In `news-app` front-end: `App.vue` renders different views (in `src/views`) through the router, and pulls in data from the backend endpoint to load each into its own article component (`src/components/Article.vue`). The main view is `src/views/Home.vue`
 
