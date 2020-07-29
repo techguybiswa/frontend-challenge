@@ -15,9 +15,10 @@ Please fork the repository to begin the task. [Submission guidelines](#what-we-a
 First, the code: After you have gotten familiar with the app, [technical details of the app are below](#main-app-functionality--file-structure), we would like for you to:
 1. add a section to the homepage which allows the user to filter the results according to **ONE** category that a reader might want to filter news by (topic, source, date, or ??) 
 2. add at least 1 or 2 tests to the front-end web app
-3. implement web accessibility on components and make the website SEO friendly
+3. implement web accessibility on components
 4. *(optional)* improve the functionality & design of the Article component (`src/components/Article.vue`) so that it is more intuitive to a reader
 5. *(optional)* improve the overall design of the homepage
+6. *(optional)* make the website SEO friendly
    
 **If you prefer, you are welcome to use your own/preferred front-end framework (e.g. React)**, to ping our included backend service. You are also welcome to **make any changes to the codebase that you would like to, as long as it is still functional.** Please remember that this is meant to take up to **3 hours in total**, and is merely an exercise, so we are not expecting the entire moon, just holistic improvements! 😬 😅
 
