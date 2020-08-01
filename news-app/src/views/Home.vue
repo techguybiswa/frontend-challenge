@@ -49,7 +49,7 @@ export default {
     contentType: 'top UK headlines'
   }),
   created() {
-    console.log(process.env[`VUE_APP_SERVICE_URL_${stage}`])
+    console.log(process.env)
     this.loadArticles('headlines', JSON.stringify({ country: 'gb' }))
   },
   methods: {

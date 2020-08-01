@@ -11,7 +11,7 @@ provider:
   region: eu-west-2 # default is us-east-1
   cfLogs: true
   # apiKeys:
-  #   - news_api
+  #   - news_api 
 
 functions:
   hello:
