@@ -6,7 +6,7 @@ import Article from "../components/Article"
 import { Skeleton } from 'antd';
 import { Result, Button } from 'antd';
 
-import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
+import 'antd/dist/antd.css';
 import {BASE_URL, APP_ENV} from "../constants"
 
 const { Header, Content, Footer } = Layout;
@@ -21,21 +21,23 @@ class Home extends Component {
         }
     }
     componentDidMount = () =>{
-        this.fetchHeadlines()
+        this.fetchArticles({ country: 'gb' },"headlines")
     }
-    fetchHeadlines = async () => {
+    fetchArticles = async (body,type) => {
+        window.scrollTo(0, 0);
         const settings = {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ country: 'gb' })
+            body: JSON.stringify(body)
         };
         try {
             this.setState({
-                isLoading: true
+                isLoading: true,
+                error: null
             })
-            const fetchResponse = await fetch(`${BASE_URL}${APP_ENV}/articles?type=headlines`, settings);
+            const fetchResponse = await fetch(`${BASE_URL}${APP_ENV}/articles?type=${type}`, settings);
             const data = await fetchResponse.json();
             this.setState({
                 articles: data.articles,
@@ -53,7 +55,7 @@ class Home extends Component {
     render() {
         return (
             <>
-               <SearchBar/>
+               <SearchBar fetchArticles={this.fetchArticles}/>
                {this.state.isLoading && 
                <Skeleton active />
                }
@@ -61,13 +63,20 @@ class Home extends Component {
                 <Result
                 status="500"
                 title="Error"
-                subTitle="Sorry, something went wrong."
+                subTitle="Sorry, something went wrong. Please refresh or come back later"
               />
                }
-               {this.state.articles && 
+               {this.state.articles && !this.state.isLoading && !this.state.error &&
                    this.state.articles.map(eachArticle => (
-                        <Article data={eachArticle}/>
+                        <Article data={eachArticle} />
                    ))
+               }
+               {
+                   this.state.articles.length == 0 && !this.state.isLoading && !this.state.error && <Result
+                   status="404"
+                   title="No articles found"
+                   subTitle="Sorry, your search query did not fetch anything."
+                 />
                }
             </>
         );

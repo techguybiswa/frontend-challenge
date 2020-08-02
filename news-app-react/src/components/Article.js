@@ -27,7 +27,7 @@ class Article extends Component {
                             cover={
                                 <img
                                     alt={data.title ? data.title : "Title not found"}
-                                    src={data.urlToImage ? data.urlToImage : ""}
+                                    src={data.urlToImage ? data.urlToImage : "https://miro.medium.com/max/500/0*-ouKIOsDCzVCTjK-.png"}
                                 />
                             }
                         >
@@ -35,7 +35,7 @@ class Article extends Component {
                                 title={data.title ? data.title : "Title not found"}
                                 description={data.description ? data.description : "Description not found"}
                             />
-                            <Button type="primary" href={data.url} style={{marginTop: "10px"}} block>Read Full News</Button>
+                            <Button type="primary" href={data.url} style={{marginTop: "10px"}} data-test-id="read-full-news" block>Read Full News</Button>
 
                         </Card>
                     </Col>
