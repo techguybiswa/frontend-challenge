@@ -35,7 +35,8 @@ class Article extends Component {
                                 title={data.title ? data.title : "Title not found"}
                                 description={data.description ? data.description : "Description not found"}
                             />
-                            <Button type="primary" href={data.url} style={{marginTop: "10px"}} data-test-id="read-full-news" block>Read Full News</Button>
+                            <Button type="primary" href={data.url} style={{ marginTop: "10px" }} data-test-id="read-full-news" aria-label='View full article button'
+                                block>Read Full News</Button>
 
                         </Card>
                     </Col>

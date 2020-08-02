@@ -47,6 +47,9 @@ class SearchBar extends Component {
                 console.log(`selected ${filterValue}`);
             })
         } else {
+            this.setState({
+                filterValue: []
+            })
             message.info("Please enter a search value first")
         }
 
@@ -62,6 +65,7 @@ class SearchBar extends Component {
                 <Row style={{ position: "sticky", top: "10px", zIndex: "99", background: "rgba(0,0,0,.7)", padding: "20px" }}>
                     <Col xs={24} sm={24} md={18} lg={18} xl={18}>
                         <Search
+                            aria-label='Search Bar'
                             placeholder="Filter news by keyword. Advanced: use quotes ('') for exact matches, and the + / - symbols for needed / excluded words."
                             onKeyUp={this.debouncedSearch}
                             data-test-id="search-news-api"
@@ -72,6 +76,7 @@ class SearchBar extends Component {
 
                     <Col xs={24} sm={24} md={6} lg={6} xl={6}>
                         <Select
+                            aria-label='Filter By Source'
                             mode="multiple"
                             data-test-id="filter-news-api"
                             showSearch
