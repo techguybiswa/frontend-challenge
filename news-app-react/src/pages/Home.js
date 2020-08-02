@@ -17,7 +17,8 @@ class Home extends Component {
         this.state={
             articles: [],
             isLoading: false,
-            error: null
+            error: null,
+            headerText: "Top Headlines of UK"
         }
     }
     componentDidMount = () =>{
@@ -25,6 +26,15 @@ class Home extends Component {
     }
     fetchArticles = async (body,type) => {
         window.scrollTo(0, 0);
+        if(type=="search"){
+            this.setState({
+                headerText:`Articles for ${body.q}  ${body.domains.length ? "from " + body.domains : ""}`
+            })
+        } else{
+            this.setState({
+                headerText:`Top Headlines of UK`
+            })
+        }
         const settings = {
             method: 'POST',
             headers: {
@@ -55,6 +65,7 @@ class Home extends Component {
     render() {
         return (
             <>
+            <h1 style={{textAlign:"center"}}>{this.state.headerText}</h1>
                <SearchBar fetchArticles={this.fetchArticles}/>
                {this.state.isLoading && 
                <Skeleton active />
@@ -67,8 +78,10 @@ class Home extends Component {
               />
                }
                {this.state.articles && !this.state.isLoading && !this.state.error &&
-                   this.state.articles.map(eachArticle => (
-                        <Article data={eachArticle} />
+                   this.state.articles.map((eachArticle,index) => (
+                       <React.Fragment key={index}>
+                           <Article data={eachArticle} />
+                       </React.Fragment>
                    ))
                }
                {
