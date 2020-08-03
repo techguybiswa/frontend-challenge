@@ -40,7 +40,7 @@ On Mac, you can use [Homebrew] to get [nvm](https://github.com/nvm-sh/nvm) to ma
 - `nvm use node`
 For other OSes, the installation tools are in the links for `nvm` and `yarn` above. You are also welcome to use `npm` instead of `yarn`.
 
-<h5><b>Next steps to start the React App</b></h5>
+<h5>Next steps to start the React App</h5>
 <ol>
   <li>cd news-app-react</li>
   <li>npm install</li>
