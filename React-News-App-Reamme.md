@@ -27,7 +27,7 @@ Before going further I would request you all to go through this video: <a href="
   <li><b>Sticky Search Bar and filter : </b> In the previous design the search bar was not only visible on scroll to top. To me it seemed that a sticky search bar will provide a much better user experience as the user now will not have to scroll to top again and again to change the filters or search query.</li>
     <li><b>Responsive Design: </b> The design has been made. As you can see in the demo video that teh elements readjust to the changing width.  Responsiveness imporves <b>SEO</b> and <b>Accessibility</b></li>
   <li><b>Web Accessibility enabled components: </b> Although I have not exhaustively made the components web accessible but a lot many things like proper HTML structure, adding alt tags , aria-lablled tags, proper color contrasts and responsiveness design have been implemented to assist web accessibility.</li>
-    <li><b>Proper Error Handling and loading status: </b> Currently the app captures and displays errors like <b>No internet connection</b> , <b>No article found<b> and no search query. Also it dispplays <b>skeleton loaders</b> when API request is pending </li>
+    <li><b>Proper Error Handling and loading status: </b> Currently the app captures and displays errors like <b>No internet connection</b> , <b>No article found</b> and no search query. Also it dispplays <b>skeleton loaders</b> when API request is pending </li>
 
 </ul>
 
