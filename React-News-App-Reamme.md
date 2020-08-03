@@ -59,3 +59,13 @@ For other OSes, the installation tools are in the links for `nvm` and `yarn` abo
     <li> src/services: This dir is empty for now but when we scle up in future we can have this dir for calling and handling all external API calls.</li>
   
 </ul>
+<h3>Testing</h3>
+
+For testing I have integrated Cypress. I have also written one test to check if the filter is working properly for BBC UK.
+To start the test run: ./node_modules/.bin/cypress open
+Then click on "test_filter.js" inside cypress/integration
+One can access the cypress test file from : cypress/integration/test_filter.js
+
+<h3>Future Work</h3>
+
+To make it even more applealing adding infinite scroll can be a really good feature.
