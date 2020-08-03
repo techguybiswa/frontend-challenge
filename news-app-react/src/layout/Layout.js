@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { DatePicker } from 'antd';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu } from 'antd';
 
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 const { Header, Content, Footer } = Layout;

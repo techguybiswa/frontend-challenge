@@ -1,17 +1,8 @@
 import React, { Component } from 'react';
-import { DatePicker } from 'antd';
-import { Layout, Menu, Breadcrumb } from 'antd';
-import { Input } from 'antd';
-import { AudioOutlined } from '@ant-design/icons';
-import { Card, Avatar } from 'antd';
-import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
-import { Row, Col } from 'antd';
-import { Button } from 'antd';
-
-import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
+import { Card, Input, Row, Col, Button } from 'antd';
+import 'antd/dist/antd.css';
 const { Meta } = Card;
 const { Search } = Input;
-const { Header, Content, Footer } = Layout;
 
 class Article extends Component {
     render() {

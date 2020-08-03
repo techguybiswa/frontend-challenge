@@ -1,18 +1,10 @@
 import React, { Component } from 'react';
-import { DatePicker } from 'antd';
-import { Layout, Menu, Breadcrumb } from 'antd';
-import { Input } from 'antd';
-import { AudioOutlined } from '@ant-design/icons';
-import { Select } from 'antd';
-import { Row, Col } from 'antd';
-import { message, Button } from 'antd';
-
+import { Layout, Input, Select, Row, Col, message } from 'antd';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import { debounceFunction } from "../utils/common.helper"
 import { NEWS_SOURCE } from "../constants"
 const { Option } = Select;
 const { Search } = Input;
-const { Header, Content, Footer } = Layout;
 
 class SearchBar extends Component {
     constructor(props) {
