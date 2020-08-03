@@ -31,14 +31,7 @@ Before going further I would request you all to go through this video: <a href="
 
 </ul>
 
-<h3>Quickstart dev
-</h3>
 
-Use the latest Node version as it's recommended.
-On Mac, you can use [Homebrew] to get [nvm](https://github.com/nvm-sh/nvm) to manage your version & [`yarn`](https://classic.yarnpkg.com/en/docs/install/#mac-stable) or `npm` itself for packages, then:
-- `nvm install node`
-- `nvm use node`
-For other OSes, the installation tools are in the links for `nvm` and `yarn` above. You are also welcome to use `npm` instead of `yarn`.
 
 <h5>Next steps to start the React App</h5>
 <ol>
@@ -69,3 +62,12 @@ One can access the cypress test file from : cypress/integration/test_filter.js
 <h3>Future Work</h3>
 
 To make it even more applealing adding infinite scroll can be a really good feature.
+
+<h3>Quickstart dev
+</h3>
+
+Use the latest Node version as it's recommended.
+On Mac, you can use [Homebrew] to get [nvm](https://github.com/nvm-sh/nvm) to manage your version & [`yarn`](https://classic.yarnpkg.com/en/docs/install/#mac-stable) or `npm` itself for packages, then:
+- `nvm install node`
+- `nvm use node`
+For other OSes, the installation tools are in the links for `nvm` and `yarn` above. You are also welcome to use `npm` instead of `yarn`.
