@@ -40,8 +40,8 @@ Step-1: The user selects the event and clicks on the “Cancel” button. A POST
 
 Stepp-2: In the EVENTREGISTRATION TABLE the column corresponding to the EventId and the MemberId is updated and the status is changed from REGISTER_SUCCESS to REFUND_PENDING. 
 
-Step-3 : The row corresponding to the MemberId and the EventID is searched on PAYMENTS TABLE and there the AmountPaid is refunded via the 3rd party payment service. Once the 3rd party payment service request is complete, we need to update the column in PAYMENTS TABLE and make AmountRefunded to the value at AmountPaid field.
+Step-3 : The row corresponding to the MemberId and the EventID is selected on PAYMENTS TABLE and there the AmountPaid is refunded via the 3rd party payment service. Once the 3rd party payment service request is done, we need to update the column in PAYMENTS TABLE and make AmountRefunded to the value at AmountPaid field.
 
-Step-4: Once the updates in the PAYMENTS TABLE are done, the EVENTREGISTRATION TABLE status is to be updated to REFUND_SUCCESS`
+Step-4: Once the updates in the PAYMENTS TABLE are done, the EVENTREGISTRATION TABLE status corresponding to the EventId and MemberId is to be updated to REFUND_SUCCESS`
 
 
