@@ -30,7 +30,7 @@ class SearchBar extends Component {
             this.props.fetchArticles({ country: 'gb' }, "headlines")
         }
     }
-    onChange = (filterValue) => {
+    onChangeOfFilter = (filterValue) => {
         if (this.state.searchValue.length) {
             this.setState({
                 filterValue
@@ -45,9 +45,6 @@ class SearchBar extends Component {
             message.info("Please enter a search value first")
         }
 
-    }
-    onSearch = (val) => {
-        console.log('search:', val);
     }
     debouncedSearch = debounceFunction(this.onSearchArticle, 500);
 
@@ -71,13 +68,11 @@ class SearchBar extends Component {
                             aria-label='Filter By Source'
                             mode="multiple"
                             data-test-id="filter-news-api"
-                            showSearch
                             value={this.state.filterValue}
                             style={{ width: "100%" }}
                             placeholder="Select sources"
                             optionFilterProp="children"
-                            onChange={this.onChange}
-                            onSearch={this.onSearch}
+                            onChange={this.onChangeOfFilter}
                             filterOption={(input, option) =>
                                 option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
                             }
