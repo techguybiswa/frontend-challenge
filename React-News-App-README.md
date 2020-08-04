@@ -25,20 +25,15 @@ Before going further I would request you all to go through this video: <a href="
   <li><b>Filter by news source: </b> The user can choose multiple sources or single source to filter the news. So if the user wants to see startup news from TechCrunch and Wired then the user can type "startup" in the search box and select "TechCrunch" and "Wired" from the dropdown </li>
   <li><b>Default view top headlines: </b> When no query is provided the user will see top headlines of UK </li>
   <li><b>Sticky Search Bar and filter : </b> In the previous design the search bar was only visible on scroll to top. To me it seemed that a sticky search bar will provide a much better user experience as the user now will not have to scroll to top again and again to change the filters or search query.</li>
-    <li><b>Responsive Design: </b> The design has been made. As you can see in the demo video that teh elements readjust to the changing width.  Responsiveness imporves <b>SEO</b> and <b>Accessibility</b></li>
-  <li><b>Web Accessibility enabled components: </b> Although I have not exhaustively made the components web accessible but a lot many things like proper HTML structure, adding alt tags , aria-lablled tags, proper color contrasts and responsiveness design have been implemented to assist web accessibility.</li>
+    <li><b>Responsive Design: </b> The design has been made responsive. As you can see in the demo video that teh elements readjust to the changing width.  Responsiveness imporves <b>SEO</b> and <b>Accessibility</b></li>
+  <li><b>Web Accessibility enabled components: </b> Although I have not exhaustively made the components web accessible but a lot many things like proper HTML structure, adding alt tags , aria-lablled tags, proper color contrasts and responsive design have been implemented to assist web accessibility.</li>
     <li><b>Proper Error Handling and loading status: </b> Currently the app captures and displays errors like <b>No internet connection</b> , <b>No article found</b> and no search query. Also it displays <b>skeleton loaders</b> when API request is pending </li>
 
 </ul>
 
 
 
-<h5>Next steps to start the React App</h5>
-<ol>
-  <li>cd news-app-react</li>
-  <li>npm install</li>
-  <li>PORT=3001 npm start</li>
-</ol>
+
 <h3>Quickstart dev
 </h3>
 
@@ -47,6 +42,12 @@ On Mac, you can use [Homebrew] to get [nvm](https://github.com/nvm-sh/nvm) to ma
 - `nvm install node`
 - `nvm use node`
 For other OSes, the installation tools are in the links for `nvm` and `yarn` above. You are also welcome to use `npm` instead of `yarn`.
+<h5>Next steps to start the React App</h5>
+<ol>
+  <li>cd news-app-react</li>
+  <li>npm install</li>
+  <li>PORT=3001 npm start</li>
+</ol>
 <h3>File Structure and corresponding functionality
 </h3>
 
