@@ -15,6 +15,7 @@ This database is not bound to any particular technology (e.g. SQL or NoSQL), and
 
 <img src="https://i.ibb.co/LQ5gPrc/DBSuvera.png"/>
 
+<b>The DB Design is made such that an user can register to multiple events. As an user, one can register to an event or multiple events, cancel/refund an event and also transfer an event to another event.</b> 
  
 2. Define what steps required for event registration (i.e. database flow). Suppose you are already logged in and on registration page with option to select event from dropdown list, member information is available globally.
 

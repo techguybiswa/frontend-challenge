@@ -87,3 +87,10 @@ These are the guidelines on what we are looking for in our submissions:
 - As a news reader, it is clear how I should can use the page to find news that I am looking for
 - If technologies used are changed (e.g. using React instead of Vue), a set of instructions on how to run the app are updated in the README.
 - Any changes to file structure are also communicated in the README
+
+### Biswarup's Update
+
+1. To get started with the React App please read: https://github.com/techguybiswa/frontend-challenge/blob/master/React-News-App-README.md
+
+2. For the analytics design please read: https://github.com/techguybiswa/frontend-challenge/blob/master/Analytics-Design-README.md
+3. For the DB Task please read: https://github.com/techguybiswa/frontend-challenge/blob/master/DB-Task.md
